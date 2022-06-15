@@ -1,0 +1,116 @@
+/* color variables */
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray-bg-headings-buttons: hsl(0, 0%, 95%);
+}
+
+/*base propertes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+   /* font-family: 'Big Shoulders Display', cursive; */
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--very-light-gray-bg-headings-buttons);
+}
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--very-light-gray-bg-headings-buttons);
+    margin-top: 20px;
+    text-transform: uppercase; 
+}
+p {
+    color: var(--white-paragraphs);
+    margin-top: 15px;
+}
+button {
+    background-color: var(--very-light-gray-bg-headings-buttons);
+    outline: none;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    font-family: 'Big Shoulders Display', cursive;
+    margin-top: 55px;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.btn-1 {
+    color: var(--bright-orange);
+}
+.btn-1:hover {
+    background-color: var(--bright-orange);
+    color: var(--very-light-gray-bg-headings-buttons);
+}
+.btn-2 {
+    color: var(--dark-cyan);
+}
+.btn-2:hover {
+    background-color: var(--dark-cyan);
+    color: var(--very-light-gray-bg-headings-buttons);
+}
+.btn-3 {
+    color: var(--very-dark-cyan);
+}
+.btn-3:hover {
+    background-color: var(--very-dark-cyan);
+    color: var(--very-light-gray-bg-headings-buttons);
+}
+.container-1 {
+    background-color: var(--bright-orange);
+}
+.container-2 {
+    background-color: var(--dark-cyan);
+}
+.container-3 {
+    background-color: var(--very-dark-cyan);
+}
+
+/* for larger screens */
+@media screen and (min-width: 900px) {
+   .container {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+   .container-1, .container-2, .container-3 {
+    padding: 2.5rem;
+    width: 50%;
+}
+p {
+    font-size: 0.8rem;
+    line-height: 2;
+}
+}
+/* for smaller screens */
+@media screen and (max-width: 900px) {
+   .container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+   }
+   .container-1, .container-2, .container-3 {
+    padding: 2.5rem;
+}
+button {
+    margin-top: 20px;
+}
+p {
+    font-size: 0.7rem;
+    line-height: 2;
+}
+}
