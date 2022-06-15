@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Git repo link](https://your-solution-url.com)
+- Solution URL: [Git repo link](https://github.com/Plut0r/3-column)
 - Live Site URL: [Git live link](https://your-live-site-url.com)
 
 
